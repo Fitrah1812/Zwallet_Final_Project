@@ -12,7 +12,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="xUr-pz-23n">
             <objects>
-                <viewController storyboardIdentifier="SignUp" id="DvQ-H6-Voh" customClass="SignUpViewController" customModule="Zwallet_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUp" automaticallyAdjustsScrollViewInsets="NO" id="DvQ-H6-Voh" customClass="SignUpViewController" customModule="Zwallet_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eoI-Ar-Qq2">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,10 +21,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPx-yV-zab">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="850"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lFs-xu-25Z" customClass="CustomViewCornerRounded" customModule="Zwallet_Final_Project" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="150" width="393" height="700"/>
+                                                <rect key="frame" x="0.0" y="276" width="393" height="576"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create your account to access Zwallet." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3a-d3-sHy">
                                                         <rect key="frame" x="20" y="108.66666666666669" width="353" height="20.333333333333343"/>
@@ -126,7 +126,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zwallet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYo-0U-9zs">
-                                                <rect key="frame" x="20" y="40" width="353" height="70"/>
+                                                <rect key="frame" x="20" y="120" width="353" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                                 <color key="textColor" name="primary"/>
                                                 <nil key="highlightedColor"/>
@@ -135,14 +135,12 @@
                                         <color key="backgroundColor" name="background"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="dYo-0U-9zs" secondAttribute="trailing" constant="20" id="0h6-v6-JPJ"/>
-                                            <constraint firstItem="lFs-xu-25Z" firstAttribute="top" secondItem="dYo-0U-9zs" secondAttribute="bottom" constant="40" id="LWI-j4-olu"/>
-                                            <constraint firstItem="dYo-0U-9zs" firstAttribute="top" secondItem="hPx-yV-zab" secondAttribute="top" constant="40" id="NGi-9x-O20"/>
+                                            <constraint firstItem="lFs-xu-25Z" firstAttribute="top" secondItem="dYo-0U-9zs" secondAttribute="bottom" constant="120" id="LWI-j4-olu"/>
+                                            <constraint firstItem="dYo-0U-9zs" firstAttribute="top" secondItem="hPx-yV-zab" secondAttribute="top" constant="120" id="NGi-9x-O20"/>
                                             <constraint firstItem="lFs-xu-25Z" firstAttribute="leading" secondItem="hPx-yV-zab" secondAttribute="leading" id="YuH-b3-vlE"/>
-                                            <constraint firstItem="lFs-xu-25Z" firstAttribute="top" secondItem="hPx-yV-zab" secondAttribute="top" constant="150" id="ifm-nh-X8w"/>
                                             <constraint firstAttribute="bottom" secondItem="lFs-xu-25Z" secondAttribute="bottom" id="nDV-0X-K2S"/>
                                             <constraint firstItem="dYo-0U-9zs" firstAttribute="leading" secondItem="hPx-yV-zab" secondAttribute="leading" constant="20" id="ua5-NP-pjB"/>
                                             <constraint firstAttribute="trailing" secondItem="lFs-xu-25Z" secondAttribute="trailing" id="vOA-vT-gZ1"/>
-                                            <constraint firstAttribute="height" constant="850" id="wFQ-rx-8fQ"/>
                                             <constraint firstItem="lFs-xu-25Z" firstAttribute="leading" secondItem="hPx-yV-zab" secondAttribute="leading" id="whN-xK-6aN"/>
                                             <constraint firstAttribute="trailing" secondItem="lFs-xu-25Z" secondAttribute="trailing" id="xmn-Ud-SNT"/>
                                         </constraints>
@@ -151,6 +149,7 @@
                                 <constraints>
                                     <constraint firstItem="hPx-yV-zab" firstAttribute="top" secondItem="9fg-0K-TLr" secondAttribute="top" id="6XC-Jn-mXt"/>
                                     <constraint firstAttribute="trailing" secondItem="hPx-yV-zab" secondAttribute="trailing" id="8rv-7o-XfO"/>
+                                    <constraint firstItem="hPx-yV-zab" firstAttribute="height" secondItem="9fg-0K-TLr" secondAttribute="height" id="BDW-P3-8j4"/>
                                     <constraint firstItem="hPx-yV-zab" firstAttribute="centerX" secondItem="9fg-0K-TLr" secondAttribute="centerX" id="HD5-ns-tSm"/>
                                     <constraint firstAttribute="bottom" secondItem="hPx-yV-zab" secondAttribute="bottom" id="IP3-hG-YY8"/>
                                     <constraint firstItem="hPx-yV-zab" firstAttribute="leading" secondItem="9fg-0K-TLr" secondAttribute="leading" id="eSR-4w-pB6"/>

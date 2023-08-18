@@ -29,7 +29,7 @@
         <!--View Controller-->
         <scene sceneID="3OK-Po-zlM">
             <objects>
-                <viewController storyboardIdentifier="Login" id="7dD-AS-DDY" customClass="ViewController" customModule="Zwallet_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login" automaticallyAdjustsScrollViewInsets="NO" id="7dD-AS-DDY" customClass="ViewController" customModule="Zwallet_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0HW-u1-WOa">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,10 +38,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H6J-X5-FVP">
-                                        <rect key="frame" x="0.0" y="-103" width="393" height="850"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xxb-Iv-s2W" customClass="CustomViewCornerRounded" customModule="Zwallet_Final_Project" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="250" width="393" height="664"/>
+                                                <rect key="frame" x="0.0" y="276" width="393" height="576"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zl3-nd-FFq">
                                                         <rect key="frame" x="20" y="108.6666666666667" width="353" height="40.666666666666671"/>
@@ -69,7 +69,7 @@ all the features in Zwallet.</string>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rw9-7h-JGi">
-                                                                <rect key="frame" x="0.0" y="57" width="353" height="37"/>
+                                                                <rect key="frame" x="0.0" y="57.000000000000057" width="353" height="37"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="37" id="JhS-zC-QzF"/>
                                                                 </constraints>
@@ -77,7 +77,7 @@ all the features in Zwallet.</string>
                                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                             </textField>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yda-aM-Sgd">
-                                                                <rect key="frame" x="0.0" y="114" width="353" height="37"/>
+                                                                <rect key="frame" x="0.0" y="114.00000000000006" width="353" height="37"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="37" id="qXt-Mc-h9J"/>
                                                                 </constraints>
@@ -89,14 +89,14 @@ all the features in Zwallet.</string>
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="juK-tg-zuo">
-                                                                <rect key="frame" x="0.0" y="171.00000000000003" width="353" height="20.333333333333343"/>
+                                                                <rect key="frame" x="0.0" y="171.00000000000006" width="353" height="20.333333333333343"/>
                                                                 <color key="tintColor" systemColor="systemRedColor"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIg-5E-NMm" customClass="CustomButton" customModule="Zwallet_Final_Project">
-                                                                <rect key="frame" x="0.0" y="211.33333333333334" width="353" height="57.000000000000028"/>
+                                                                <rect key="frame" x="0.0" y="211.33333333333331" width="353" height="57"/>
                                                                 <color key="backgroundColor" name="ButtonNoClick"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="57" id="W6t-Ud-pSP"/>
@@ -114,7 +114,7 @@ all the features in Zwallet.</string>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6q-S3-Gcc" customClass="CustomButton" customModule="Zwallet_Final_Project">
-                                                                <rect key="frame" x="0.0" y="288.33333333333337" width="353" height="34.333333333333314"/>
+                                                                <rect key="frame" x="0.0" y="288.33333333333331" width="353" height="34.333333333333314"/>
                                                                 <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Don’t have an account? Let’s Sign Up"/>
@@ -149,7 +149,7 @@ all the features in Zwallet.</string>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zwallet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPI-J9-gq6">
-                                                <rect key="frame" x="20" y="80" width="353" height="130"/>
+                                                <rect key="frame" x="20" y="120" width="353" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                                 <color key="textColor" name="primary"/>
                                                 <nil key="highlightedColor"/>
@@ -158,13 +158,11 @@ all the features in Zwallet.</string>
                                         <color key="backgroundColor" name="background"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="xxb-Iv-s2W" secondAttribute="trailing" id="3OW-ux-RNo"/>
-                                            <constraint firstItem="xxb-Iv-s2W" firstAttribute="top" secondItem="HPI-J9-gq6" secondAttribute="bottom" constant="40" id="4kR-nw-60g"/>
                                             <constraint firstAttribute="trailing" secondItem="HPI-J9-gq6" secondAttribute="trailing" constant="20" id="5OR-tS-ymu"/>
-                                            <constraint firstItem="HPI-J9-gq6" firstAttribute="top" secondItem="H6J-X5-FVP" secondAttribute="top" constant="80" id="DP9-9b-fLc"/>
-                                            <constraint firstItem="xxb-Iv-s2W" firstAttribute="top" secondItem="H6J-X5-FVP" secondAttribute="top" constant="250" id="GXj-dD-VQc"/>
+                                            <constraint firstItem="HPI-J9-gq6" firstAttribute="top" secondItem="H6J-X5-FVP" secondAttribute="top" constant="120" id="DP9-9b-fLc"/>
                                             <constraint firstItem="xxb-Iv-s2W" firstAttribute="leading" secondItem="H6J-X5-FVP" secondAttribute="leading" id="XPV-aO-zc7"/>
-                                            <constraint firstAttribute="bottom" secondItem="xxb-Iv-s2W" secondAttribute="bottom" constant="-64" id="Zp0-iI-m5m"/>
-                                            <constraint firstAttribute="height" constant="850" id="mB2-Ud-tOI"/>
+                                            <constraint firstItem="xxb-Iv-s2W" firstAttribute="top" secondItem="HPI-J9-gq6" secondAttribute="bottom" constant="120" id="aRn-Qv-mst"/>
+                                            <constraint firstAttribute="bottom" secondItem="xxb-Iv-s2W" secondAttribute="bottom" id="fqq-Lg-G4X"/>
                                             <constraint firstItem="xxb-Iv-s2W" firstAttribute="leading" secondItem="H6J-X5-FVP" secondAttribute="leading" id="pac-Qn-O5P"/>
                                             <constraint firstItem="HPI-J9-gq6" firstAttribute="leading" secondItem="H6J-X5-FVP" secondAttribute="leading" constant="20" id="riX-yP-8JU"/>
                                             <constraint firstAttribute="trailing" secondItem="xxb-Iv-s2W" secondAttribute="trailing" id="viZ-q9-Bxm"/>
@@ -174,8 +172,9 @@ all the features in Zwallet.</string>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="H6J-X5-FVP" secondAttribute="trailing" id="0O4-rj-gE6"/>
                                     <constraint firstItem="H6J-X5-FVP" firstAttribute="leading" secondItem="yqL-Ij-rpW" secondAttribute="leading" id="BRx-Mq-H8p"/>
-                                    <constraint firstItem="H6J-X5-FVP" firstAttribute="top" secondItem="S1b-kP-bsr" secondAttribute="top" id="DdP-vM-w8V"/>
+                                    <constraint firstItem="H6J-X5-FVP" firstAttribute="top" secondItem="yqL-Ij-rpW" secondAttribute="top" id="DdP-vM-w8V"/>
                                     <constraint firstItem="H6J-X5-FVP" firstAttribute="centerX" secondItem="yqL-Ij-rpW" secondAttribute="centerX" id="bWl-vi-FMR"/>
+                                    <constraint firstItem="H6J-X5-FVP" firstAttribute="height" secondItem="yqL-Ij-rpW" secondAttribute="height" id="hOw-AU-DCy"/>
                                     <constraint firstAttribute="bottom" secondItem="H6J-X5-FVP" secondAttribute="bottom" id="tfW-Wk-CqU"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="ZbG-Ig-HQL"/>
@@ -192,7 +191,7 @@ all the features in Zwallet.</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="j5h-Mq-Ozg"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="EmailTextField" destination="jJs-kZ-cMX" id="6iZ-vf-tGe"/>
                         <outlet property="ForgotButton" destination="Yda-aM-Sgd" id="A3T-ea-qzE"/>

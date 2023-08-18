@@ -12,13 +12,13 @@
         <!--Otp View Controller-->
         <scene sceneID="2Lc-nE-1Lh">
             <objects>
-                <viewController storyboardIdentifier="Otp" id="wtZ-h2-2fN" customClass="OtpViewController" customModule="Zwallet_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Otp" automaticallyAdjustsScrollViewInsets="NO" id="wtZ-h2-2fN" customClass="OtpViewController" customModule="Zwallet_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="teg-hs-UnX">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hoH-Ky-n1h" customClass="CustomViewCornerRounded" customModule="Zwallet_Final_Project" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="259" width="393" height="593"/>
+                                <rect key="frame" x="0.0" y="276" width="393" height="576"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please input your OTP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FMB-mm-PGK">
                                         <rect key="frame" x="30" y="40" width="343" height="28.666666666666671"/>
@@ -136,7 +136,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zwallet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otz-Sq-jR5">
-                                <rect key="frame" x="20" y="163" width="353" height="36"/>
+                                <rect key="frame" x="20" y="120" width="353" height="36"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                 <color key="textColor" name="primary"/>
                                 <nil key="highlightedColor"/>
@@ -147,15 +147,15 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="hoH-Ky-n1h" secondAttribute="bottom" id="JLA-vC-jyO"/>
                             <constraint firstItem="hoH-Ky-n1h" firstAttribute="trailing" secondItem="GUB-5w-JCd" secondAttribute="trailing" id="ajl-b4-cKt"/>
-                            <constraint firstItem="otz-Sq-jR5" firstAttribute="top" secondItem="GUB-5w-JCd" secondAttribute="top" constant="60" id="bYX-iX-utd"/>
                             <constraint firstItem="otz-Sq-jR5" firstAttribute="leading" secondItem="GUB-5w-JCd" secondAttribute="leading" constant="20" id="cpu-p0-rRk"/>
-                            <constraint firstItem="hoH-Ky-n1h" firstAttribute="top" secondItem="otz-Sq-jR5" secondAttribute="bottom" constant="60" id="dMM-Ag-P2O"/>
+                            <constraint firstItem="hoH-Ky-n1h" firstAttribute="top" secondItem="otz-Sq-jR5" secondAttribute="bottom" constant="120" id="dMM-Ag-P2O"/>
                             <constraint firstItem="GUB-5w-JCd" firstAttribute="trailing" secondItem="otz-Sq-jR5" secondAttribute="trailing" constant="20" id="rxF-Iw-O5d"/>
                             <constraint firstItem="hoH-Ky-n1h" firstAttribute="leading" secondItem="GUB-5w-JCd" secondAttribute="leading" id="s09-iV-Hmh"/>
+                            <constraint firstItem="otz-Sq-jR5" firstAttribute="top" secondItem="teg-hs-UnX" secondAttribute="top" constant="120" id="xrl-L1-0Sx"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SB9-eG-TQm"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="ConfirmButton" destination="hue-d2-qTd" id="EnQ-XI-hQc"/>
                         <outlet property="backgroundRounded" destination="hoH-Ky-n1h" id="igV-ba-D7k"/>

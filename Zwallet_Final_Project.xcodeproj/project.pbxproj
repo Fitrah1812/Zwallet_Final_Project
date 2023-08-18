@@ -29,6 +29,7 @@
 		5D011C532A864E6A006CEF76 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D011C522A864E6A006CEF76 /* HomeViewController.swift */; };
 		5D011C552A864E77006CEF76 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D011C542A864E77006CEF76 /* Home.storyboard */; };
 		5D011C582A864E8E006CEF76 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D011C572A864E8E006CEF76 /* ProfileViewController.swift */; };
+		5D0FDA612A8F62C90077C9E3 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5D0FDA602A8F62C90077C9E3 /* IQKeyboardManagerSwift */; };
 		5D3172AB2A87737A002C4B3F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3172AA2A87737A002C4B3F /* Constants.swift */; };
 		5D3172AD2A87755A002C4B3F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3172AC2A87755A002C4B3F /* Profile.swift */; };
 		5D3172B22A87A515002C4B3F /* ResponseLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3172B12A87A515002C4B3F /* ResponseLogin.swift */; };
@@ -96,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D0FDA612A8F62C90077C9E3 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +253,9 @@
 			dependencies = (
 			);
 			name = Zwallet_Final_Project;
+			packageProductDependencies = (
+				5D0FDA602A8F62C90077C9E3 /* IQKeyboardManagerSwift */,
+			);
 			productName = Zwallet_Final_Project;
 			productReference = 5D011BD52A85BBF1006CEF76 /* Zwallet_Final_Project.app */;
 			productType = "com.apple.product-type.application";
@@ -323,6 +328,9 @@
 				Base,
 			);
 			mainGroup = 5D011BCC2A85BBF1006CEF76;
+			packageReferences = (
+				5D0FDA5F2A8F62C90077C9E3 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = 5D011BD62A85BBF1006CEF76 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -730,6 +738,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5D0FDA5F2A8F62C90077C9E3 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5D0FDA602A8F62C90077C9E3 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D0FDA5F2A8F62C90077C9E3 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		5D011BE12A85BBF1006CEF76 /* Zwallet_Final_Project.xcdatamodeld */ = {

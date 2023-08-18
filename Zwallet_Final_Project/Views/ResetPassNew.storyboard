@@ -12,7 +12,7 @@
         <!--Reset Pass New View Controller-->
         <scene sceneID="e9r-TE-tRe">
             <objects>
-                <viewController storyboardIdentifier="ResetPassNew" id="sBw-F3-Hae" customClass="ResetPassNewViewController" customModule="Zwallet_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResetPassNew" automaticallyAdjustsScrollViewInsets="NO" id="sBw-F3-Hae" customClass="ResetPassNewViewController" customModule="Zwallet_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fMB-0b-S4h">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,7 +24,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="850"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qRi-Qu-hEt" customClass="CustomViewCornerRounded" customModule="Zwallet_Final_Project" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="150" width="393" height="700"/>
+                                                <rect key="frame" x="0.0" y="276" width="393" height="574"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePZ-Xp-Caw">
                                                         <rect key="frame" x="20" y="108.6666666666667" width="353" height="40.666666666666671"/>
@@ -52,7 +52,7 @@ you can login to Zwallet.</string>
                                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                             </textField>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm new password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aUa-Gm-tul">
-                                                                <rect key="frame" x="0.0" y="57" width="353" height="37"/>
+                                                                <rect key="frame" x="0.0" y="57.000000000000057" width="353" height="37"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="37" id="eVk-AX-Nnt"/>
                                                                 </constraints>
@@ -102,7 +102,7 @@ you can login to Zwallet.</string>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zwallet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwT-ap-WzI">
-                                                <rect key="frame" x="20" y="60" width="353" height="50"/>
+                                                <rect key="frame" x="20" y="120" width="353" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                                 <color key="textColor" name="primary"/>
                                                 <nil key="highlightedColor"/>
@@ -115,12 +115,10 @@ you can login to Zwallet.</string>
                                             <constraint firstAttribute="trailing" secondItem="XwT-ap-WzI" secondAttribute="trailing" constant="20" id="HuL-6V-DB4"/>
                                             <constraint firstAttribute="trailing" secondItem="qRi-Qu-hEt" secondAttribute="trailing" id="QzE-vm-SYT"/>
                                             <constraint firstItem="XwT-ap-WzI" firstAttribute="leading" secondItem="LIH-jt-J1t" secondAttribute="leading" constant="20" id="RHM-HY-cZX"/>
-                                            <constraint firstItem="qRi-Qu-hEt" firstAttribute="top" secondItem="XwT-ap-WzI" secondAttribute="bottom" constant="40" id="SwA-9L-drU"/>
+                                            <constraint firstItem="qRi-Qu-hEt" firstAttribute="top" secondItem="XwT-ap-WzI" secondAttribute="bottom" constant="120" id="SwA-9L-drU"/>
                                             <constraint firstItem="qRi-Qu-hEt" firstAttribute="leading" secondItem="LIH-jt-J1t" secondAttribute="leading" id="VjE-Lr-ZZp"/>
                                             <constraint firstAttribute="trailing" secondItem="qRi-Qu-hEt" secondAttribute="trailing" id="Yzk-zE-pCI"/>
-                                            <constraint firstItem="XwT-ap-WzI" firstAttribute="top" secondItem="LIH-jt-J1t" secondAttribute="top" constant="60" id="hv6-Xf-ZY7"/>
-                                            <constraint firstItem="qRi-Qu-hEt" firstAttribute="top" secondItem="LIH-jt-J1t" secondAttribute="top" constant="150" id="kxL-FJ-jJd"/>
-                                            <constraint firstAttribute="height" constant="850" id="nax-SB-LZu"/>
+                                            <constraint firstItem="XwT-ap-WzI" firstAttribute="top" secondItem="LIH-jt-J1t" secondAttribute="top" constant="120" id="hv6-Xf-ZY7"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -128,6 +126,7 @@ you can login to Zwallet.</string>
                                     <constraint firstAttribute="trailing" secondItem="LIH-jt-J1t" secondAttribute="trailing" id="DBK-gF-EEK"/>
                                     <constraint firstAttribute="bottom" secondItem="LIH-jt-J1t" secondAttribute="bottom" id="MPe-jG-66d"/>
                                     <constraint firstItem="LIH-jt-J1t" firstAttribute="leading" secondItem="BSa-cf-WHk" secondAttribute="leading" id="WLw-bL-u0E"/>
+                                    <constraint firstItem="LIH-jt-J1t" firstAttribute="height" secondItem="BSa-cf-WHk" secondAttribute="height" multiplier="0.997653" id="Z3u-Jh-sUZ"/>
                                     <constraint firstItem="LIH-jt-J1t" firstAttribute="top" secondItem="BSa-cf-WHk" secondAttribute="top" id="edB-JI-Dtj"/>
                                     <constraint firstItem="LIH-jt-J1t" firstAttribute="centerX" secondItem="BSa-cf-WHk" secondAttribute="centerX" id="xfr-Uz-yyN"/>
                                 </constraints>
