@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Kf-KY-fah">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="By1-6K-wAA">
+            <objects>
+                <viewController storyboardIdentifier="Home" id="Tdg-Au-BGN" customClass="HomeViewController" customModule="Zwallet_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O5h-YO-DuB">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rr2-8t-ihm">
+                                <rect key="frame" x="158" y="409" width="76" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="e63-IQ-iYs"/>
+                        <color key="backgroundColor" name="background"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house.fill" id="fdt-NR-bZ6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kVV-kQ-90M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1691" y="249"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="GYy-lP-r76">
+            <objects>
+                <viewController storyboardIdentifier="Profile" id="7a3-eF-RRA" customClass="ProfileViewController" customModule="Zwallet_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="icW-gs-Z2d">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="TE2-Hw-GqV">
+                                <rect key="frame" x="20" y="99" width="353" height="200"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NuI-B6-pyJ">
+                                        <rect key="frame" x="136.66666666666666" y="0.0" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="SGV-lG-b4w"/>
+                                            <constraint firstAttribute="height" constant="80" id="UmF-zx-kch"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRa-9Q-ekA">
+                                        <rect key="frame" x="150" y="95" width="53.333333333333343" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Edit"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNZ-IR-eei">
+                                        <rect key="frame" x="154" y="144.33333333333334" width="45" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Telepon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTm-Em-ytk">
+                                        <rect key="frame" x="133.33333333333334" y="179.66666666666669" width="86.333333333333343" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RIZ-cK-ECA">
+                                <rect key="frame" x="20" y="339" width="353" height="365"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rBZ-Zp-wuP" customClass="CustomButton" customModule="Zwallet_Final_Project" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="57"/>
+                                        <color key="backgroundColor" name="ButtonNoClick"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="57" id="8ZO-59-xPh"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="arrow1-right" imagePlacement="leading" title="Personal Information " imagePadding="140"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1Y-Mh-sN1" customClass="CustomButton" customModule="Zwallet_Final_Project" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="77" width="353" height="57"/>
+                                        <color key="backgroundColor" name="ButtonNoClick"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="57" id="6Be-fS-A5G"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="arrow1-right" imagePlacement="leading" title="Change Password" imagePadding="162"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCa-l3-tQv" customClass="CustomButton" customModule="Zwallet_Final_Project" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="154" width="353" height="57"/>
+                                        <color key="backgroundColor" name="ButtonNoClick"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="57" id="nSU-7c-HXw"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="arrow1-right" imagePlacement="leading" title="Change Pin" imagePadding="210"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5Z-Qy-YW7" customClass="CustomButton" customModule="Zwallet_Final_Project" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="231" width="353" height="57"/>
+                                        <color key="backgroundColor" name="ButtonNoClick"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="57" id="nEY-n9-lkQ"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="off" imagePlacement="leading" title="Notification" imagePadding="190"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="notificationTapped:" destination="7a3-eF-RRA" eventType="touchUpInside" id="vpX-0K-pDC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ue8-zH-Fw5" customClass="CustomButton" customModule="Zwallet_Final_Project" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="308" width="353" height="57"/>
+                                        <color key="backgroundColor" name="ButtonNoClick"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="57" id="mEp-2r-pEx"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Logout"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="logoutTapped:" destination="7a3-eF-RRA" eventType="touchUpInside" id="nJ8-gZ-8Y3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hbI-AV-Fh1"/>
+                        <color key="backgroundColor" name="background"/>
+                        <constraints>
+                            <constraint firstItem="TE2-Hw-GqV" firstAttribute="leading" secondItem="hbI-AV-Fh1" secondAttribute="leading" constant="20" id="2fW-cq-eTj"/>
+                            <constraint firstItem="TE2-Hw-GqV" firstAttribute="top" secondItem="hbI-AV-Fh1" secondAttribute="top" constant="40" id="F8o-ux-iGO"/>
+                            <constraint firstItem="RIZ-cK-ECA" firstAttribute="top" secondItem="TE2-Hw-GqV" secondAttribute="bottom" constant="40" id="NYH-Rd-fPU"/>
+                            <constraint firstItem="RIZ-cK-ECA" firstAttribute="leading" secondItem="hbI-AV-Fh1" secondAttribute="leading" constant="20" id="Wcg-Ym-k1P"/>
+                            <constraint firstItem="hbI-AV-Fh1" firstAttribute="trailing" secondItem="TE2-Hw-GqV" secondAttribute="trailing" constant="20" id="hZQ-hN-s7D"/>
+                            <constraint firstItem="hbI-AV-Fh1" firstAttribute="trailing" secondItem="RIZ-cK-ECA" secondAttribute="trailing" constant="20" id="n8H-8J-8Dd"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" selectedImage="person.fill" id="qHf-FY-bLO"/>
+                    <connections>
+                        <outlet property="ChangePasswordButton" destination="u1Y-Mh-sN1" id="bDB-Av-aJm"/>
+                        <outlet property="ChangePinButton" destination="VCa-l3-tQv" id="fJo-LF-VlE"/>
+                        <outlet property="EditButton" destination="CRa-9Q-ekA" id="gCI-G2-qcL"/>
+                        <outlet property="ImageProfile" destination="NuI-B6-pyJ" id="Ce0-ev-Kfy"/>
+                        <outlet property="LogoutButton" destination="ue8-zH-Fw5" id="CeG-Tb-FMp"/>
+                        <outlet property="NameLabel" destination="eNZ-IR-eei" id="pcx-bo-KZh"/>
+                        <outlet property="NotificationToggleButton" destination="Z5Z-Qy-YW7" id="hXu-3N-2vu"/>
+                        <outlet property="PersonalInformationButton" destination="rBZ-Zp-wuP" id="EAP-rS-sL7"/>
+                        <outlet property="PhoneNumberLabel" destination="xTm-Em-ytk" id="qn5-iI-pEs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wiz-NP-LzD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1692" y="-404"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="U4O-Cc-1zz">
+            <objects>
+                <tabBarController storyboardIdentifier="MainTabBarController" id="9Kf-KY-fah" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="td5-W4-GA0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Tdg-Au-BGN" kind="relationship" relationship="viewControllers" id="rb2-ca-Al0"/>
+                        <segue destination="7a3-eF-RRA" kind="relationship" relationship="viewControllers" id="IgF-lE-Dyf"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mep-c1-ea6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="788" y="-100"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow1-right" width="24" height="22"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="off" width="48" height="26"/>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <namedColor name="ButtonNoClick">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="background">
+            <color red="0.98039215686274506" green="0.9882352941176471" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

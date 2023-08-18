@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Reset Pass New View Controller-->
+        <scene sceneID="e9r-TE-tRe">
+            <objects>
+                <viewController storyboardIdentifier="ResetPassNew" id="sBw-F3-Hae" customClass="ResetPassNewViewController" customModule="Zwallet_Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fMB-0b-S4h">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BSa-cf-WHk">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LIH-jt-J1t">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="850"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qRi-Qu-hEt" customClass="CustomViewCornerRounded" customModule="Zwallet_Final_Project" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="150" width="393" height="700"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePZ-Xp-Caw">
+                                                        <rect key="frame" x="20" y="108.6666666666667" width="353" height="40.666666666666671"/>
+                                                        <string key="text">Create and confirm your new password so
+you can login to Zwallet.</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mu3-fA-vMe">
+                                                        <rect key="frame" x="20" y="40" width="353" height="28.666666666666671"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="JeK-TR-Wf7">
+                                                        <rect key="frame" x="20" y="189.33333333333331" width="353" height="94"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Create new password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YLA-Hm-W1t">
+                                                                <rect key="frame" x="0.0" y="0.0" width="353" height="37"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="37" id="2PG-bb-rN4"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm new password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aUa-Gm-tul">
+                                                                <rect key="frame" x="0.0" y="57" width="353" height="37"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="37" id="eVk-AX-Nnt"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l40-fg-ErP" customClass="CustomButton" customModule="Zwallet_Final_Project">
+                                                        <rect key="frame" x="20" y="433.33333333333337" width="353" height="57"/>
+                                                        <color key="backgroundColor" name="ButtonNoClick"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="57" id="Ufu-jO-w8o"/>
+                                                        </constraints>
+                                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Confirm"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="ConfirmButton:" destination="sBw-F3-Hae" eventType="touchUpInside" id="1Mv-uC-5kI"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="ePZ-Xp-Caw" firstAttribute="leading" secondItem="qRi-Qu-hEt" secondAttribute="leading" constant="20" id="BIi-rV-h6p"/>
+                                                    <constraint firstItem="mu3-fA-vMe" firstAttribute="leading" secondItem="qRi-Qu-hEt" secondAttribute="leading" constant="20" id="HF0-kA-en1"/>
+                                                    <constraint firstItem="mu3-fA-vMe" firstAttribute="top" secondItem="qRi-Qu-hEt" secondAttribute="top" constant="40" id="O6M-vA-Tvq"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ePZ-Xp-Caw" secondAttribute="trailing" constant="20" id="QDG-1E-2Yl"/>
+                                                    <constraint firstAttribute="trailing" secondItem="JeK-TR-Wf7" secondAttribute="trailing" constant="20" id="T1N-LS-gHY"/>
+                                                    <constraint firstItem="ePZ-Xp-Caw" firstAttribute="top" secondItem="mu3-fA-vMe" secondAttribute="bottom" constant="40" id="UON-nI-ZVd"/>
+                                                    <constraint firstItem="JeK-TR-Wf7" firstAttribute="top" secondItem="ePZ-Xp-Caw" secondAttribute="bottom" constant="40" id="e1X-dH-a9L"/>
+                                                    <constraint firstAttribute="trailing" secondItem="mu3-fA-vMe" secondAttribute="trailing" constant="20" id="gNp-Q6-uIp"/>
+                                                    <constraint firstItem="l40-fg-ErP" firstAttribute="leading" secondItem="qRi-Qu-hEt" secondAttribute="leading" constant="20" id="jHK-hr-xQn"/>
+                                                    <constraint firstAttribute="trailing" secondItem="l40-fg-ErP" secondAttribute="trailing" constant="20" id="r6m-AI-JFW"/>
+                                                    <constraint firstItem="l40-fg-ErP" firstAttribute="top" secondItem="JeK-TR-Wf7" secondAttribute="bottom" constant="150" id="sXI-bw-PjJ"/>
+                                                    <constraint firstItem="JeK-TR-Wf7" firstAttribute="leading" secondItem="qRi-Qu-hEt" secondAttribute="leading" constant="20" id="vw2-cB-mji"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="50"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zwallet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwT-ap-WzI">
+                                                <rect key="frame" x="20" y="60" width="353" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                                <color key="textColor" name="primary"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="background"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="qRi-Qu-hEt" secondAttribute="bottom" id="3O9-eF-RNG"/>
+                                            <constraint firstItem="qRi-Qu-hEt" firstAttribute="leading" secondItem="LIH-jt-J1t" secondAttribute="leading" id="GwM-tK-I0k"/>
+                                            <constraint firstAttribute="trailing" secondItem="XwT-ap-WzI" secondAttribute="trailing" constant="20" id="HuL-6V-DB4"/>
+                                            <constraint firstAttribute="trailing" secondItem="qRi-Qu-hEt" secondAttribute="trailing" id="QzE-vm-SYT"/>
+                                            <constraint firstItem="XwT-ap-WzI" firstAttribute="leading" secondItem="LIH-jt-J1t" secondAttribute="leading" constant="20" id="RHM-HY-cZX"/>
+                                            <constraint firstItem="qRi-Qu-hEt" firstAttribute="top" secondItem="XwT-ap-WzI" secondAttribute="bottom" constant="40" id="SwA-9L-drU"/>
+                                            <constraint firstItem="qRi-Qu-hEt" firstAttribute="leading" secondItem="LIH-jt-J1t" secondAttribute="leading" id="VjE-Lr-ZZp"/>
+                                            <constraint firstAttribute="trailing" secondItem="qRi-Qu-hEt" secondAttribute="trailing" id="Yzk-zE-pCI"/>
+                                            <constraint firstItem="XwT-ap-WzI" firstAttribute="top" secondItem="LIH-jt-J1t" secondAttribute="top" constant="60" id="hv6-Xf-ZY7"/>
+                                            <constraint firstItem="qRi-Qu-hEt" firstAttribute="top" secondItem="LIH-jt-J1t" secondAttribute="top" constant="150" id="kxL-FJ-jJd"/>
+                                            <constraint firstAttribute="height" constant="850" id="nax-SB-LZu"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="LIH-jt-J1t" secondAttribute="trailing" id="DBK-gF-EEK"/>
+                                    <constraint firstAttribute="bottom" secondItem="LIH-jt-J1t" secondAttribute="bottom" id="MPe-jG-66d"/>
+                                    <constraint firstItem="LIH-jt-J1t" firstAttribute="leading" secondItem="BSa-cf-WHk" secondAttribute="leading" id="WLw-bL-u0E"/>
+                                    <constraint firstItem="LIH-jt-J1t" firstAttribute="top" secondItem="BSa-cf-WHk" secondAttribute="top" id="edB-JI-Dtj"/>
+                                    <constraint firstItem="LIH-jt-J1t" firstAttribute="centerX" secondItem="BSa-cf-WHk" secondAttribute="centerX" id="xfr-Uz-yyN"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="6Du-Re-xkQ"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="0Ie-8E-zJ5"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hVo-en-imy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BSa-cf-WHk" firstAttribute="top" secondItem="fMB-0b-S4h" secondAttribute="top" id="5T6-WS-uew"/>
+                            <constraint firstAttribute="bottom" secondItem="BSa-cf-WHk" secondAttribute="bottom" id="T9q-Oj-qu6"/>
+                            <constraint firstItem="BSa-cf-WHk" firstAttribute="leading" secondItem="fMB-0b-S4h" secondAttribute="leading" id="fZ9-oS-hqc"/>
+                            <constraint firstAttribute="trailing" secondItem="BSa-cf-WHk" secondAttribute="trailing" id="poY-ej-MPk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mY7-g4-KCo"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="ConfirmPasswordButton" destination="l40-fg-ErP" id="3zM-JN-9WK"/>
+                        <outlet property="NewConfirmTextField" destination="aUa-Gm-tul" id="36t-jF-Ijy"/>
+                        <outlet property="NewPasswordTextField" destination="YLA-Hm-W1t" id="JzU-bP-x67"/>
+                        <outlet property="backgroundRounded" destination="qRi-Qu-hEt" id="qNi-IH-o94"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gfE-lR-d0c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3811" y="11"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="ButtonNoClick">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="background">
+            <color red="0.98039215686274506" green="0.9882352941176471" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="0.38823529411764707" green="0.47450980392156861" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
