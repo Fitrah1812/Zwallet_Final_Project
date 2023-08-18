@@ -156,7 +156,6 @@ class ProfileViewController: UIViewController {
         
         UserDefaults.standard.setValue(nil, forKey: "token")
         displayMessageLogout(userMessage: "Are you sure want to logout? 😭", title: "Logout")
-        
     }
     
     @IBAction func notificationTapped(_ sender: Any) {

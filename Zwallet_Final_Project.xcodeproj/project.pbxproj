@@ -30,6 +30,7 @@
 		5D011C552A864E77006CEF76 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D011C542A864E77006CEF76 /* Home.storyboard */; };
 		5D011C582A864E8E006CEF76 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D011C572A864E8E006CEF76 /* ProfileViewController.swift */; };
 		5D0FDA612A8F62C90077C9E3 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5D0FDA602A8F62C90077C9E3 /* IQKeyboardManagerSwift */; };
+		5D0FDA642A8F9AB30077C9E3 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0FDA632A8F9AB30077C9E3 /* MainViewModel.swift */; };
 		5D3172AB2A87737A002C4B3F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3172AA2A87737A002C4B3F /* Constants.swift */; };
 		5D3172AD2A87755A002C4B3F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3172AC2A87755A002C4B3F /* Profile.swift */; };
 		5D3172B22A87A515002C4B3F /* ResponseLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3172B12A87A515002C4B3F /* ResponseLogin.swift */; };
@@ -83,6 +84,7 @@
 		5D011C522A864E6A006CEF76 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5D011C542A864E77006CEF76 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		5D011C572A864E8E006CEF76 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		5D0FDA632A8F9AB30077C9E3 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		5D3172AA2A87737A002C4B3F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5D3172AC2A87755A002C4B3F /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		5D3172B12A87A515002C4B3F /* ResponseLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseLogin.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 		5D011BD72A85BBF1006CEF76 /* Zwallet_Final_Project */ = {
 			isa = PBXGroup;
 			children = (
+				5D0FDA622A8F99510077C9E3 /* ViewModels */,
 				5DD267402A89EECB007A4112 /* Extensions */,
 				5D3173652A8947E4002C4B3F /* Supporting */,
 				5D011C4A2A8643FA006CEF76 /* Models */,
@@ -217,6 +220,14 @@
 				5D011BDC2A85BBF1006CEF76 /* ViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5D0FDA622A8F99510077C9E3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5D0FDA632A8F9AB30077C9E3 /* MainViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		5D3173652A8947E4002C4B3F /* Supporting */ = {
@@ -392,6 +403,7 @@
 				5D011C462A8643BD006CEF76 /* ResetPasswordViewController.swift in Sources */,
 				5D011BDB2A85BBF1006CEF76 /* SceneDelegate.swift in Sources */,
 				5DD267422A89EEDC007A4112 /* StringExtensions.swift in Sources */,
+				5D0FDA642A8F9AB30077C9E3 /* MainViewModel.swift in Sources */,
 				5D011C342A8607DD006CEF76 /* CustomButton.swift in Sources */,
 				5D011C582A864E8E006CEF76 /* ProfileViewController.swift in Sources */,
 				5D3172AB2A87737A002C4B3F /* Constants.swift in Sources */,
