@@ -32,32 +32,7 @@ func fetchData() {
         
         DispatchQueue.main.async {
             if(responseProfile.statusCode == 200){
-                do {
-                    let responseProfileModel = try JSONDecoder().decode(Profile.self, from: data)
-                    
-                    DispatchQueue.global().async {
-                        let imageData = try? Data(contentsOf: URL(string: "\(Constants.getPhoto)\(responseProfileModel.data.image)")!)
-
-                        if let imageData = imageData {
-                            DispatchQueue.main.async {
-//                                self?.ImageProfile.image = UIImage(data: imageData)
-                            }
-                        }
-                    }
-                    
-//                    if responseProfileModel.data.phone.isEmpty{
-//                        PhoneNumberLabel?.text = "089627934528"
-//                    } else {
-//                        PhoneNumberLabel?.text = responseProfileModel.data.phone
-//                    }
-                        
-//                    NameLabel?.text = responseProfileModel.data.firstname
-//                    NameLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 18)
-                    UserDefaults.standard.set(data, forKey: "profileData")
-                    
-                } catch let jsonErr {
-                        print(jsonErr)
-                }
+        
                 
             } else if(responseProfile.statusCode == 404){
                 
